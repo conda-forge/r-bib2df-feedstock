@@ -1,11 +1,11 @@
-About r-bib2df
-==============
+About r-bib2df-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-bib2df-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ropensci/bib2df
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-bib2df-feedstock/blob/main/LICENSE.txt)
 
 Summary: Parse a BibTeX file to a data.frame to make it accessible for further analysis and visualization.
 
