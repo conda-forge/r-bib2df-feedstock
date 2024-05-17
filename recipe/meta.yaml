@@ -1,4 +1,4 @@
-{% set version = '1.1.1' %}
+{% set version = "1.1.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bib2df_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bib2df/bib2df_{{ version }}.tar.gz
-  sha256: c6d9a087805166e1501f8c3f5d981723b217dcf0b46a7d39c6e41cd70642a734
+  sha256: 21b36bc9e9e1aeac5d7b47e796ca2a8f3424bfe6121d81740d3b8f8ea434fdf0
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -45,8 +45,7 @@ test:
 about:
   home: https://github.com/ropensci/bib2df
   license: GPL-3.0-only
-  summary: Parse a BibTeX file to a data.frame to make it accessible for further analysis and
-    visualization.
+  summary: Parse a BibTeX file to a data.frame to make it accessible for further analysis and visualization.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
